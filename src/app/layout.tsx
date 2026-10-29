@@ -31,9 +31,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: site.seo.title,
     description: site.seo.description,
+    url: site.seo.canonical,
+    siteName: site.name,
     locale: "ru_RU",
     type: "website",
     images: [{ url: site.hero.photo.src, alt: site.hero.photo.alt }],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -43,17 +49,26 @@ const jsonLd = {
     {
       "@type": "WebSite",
       name: site.name,
+      url: site.seo.canonical,
       description: site.seo.description,
       inLanguage: "ru",
     },
     {
       "@type": "Person",
       name: site.name,
+      url: site.seo.canonical,
       jobTitle: "Психолог",
-      telephone: "+79124023284",
-      email: "elena.rovnaya.26@mail.ru",
       description: "Психолог. Основа работы — гештальт-подход.",
-      knowsAbout: ["гештальт-подход", "психологическое консультирование"],
+      knowsAbout: [
+        "гештальт-подход",
+        "психологическое консультирование",
+        "деньги и самооценка",
+        "отношения",
+        "материнство",
+      ],
+      telephone: site.contacts.phone?.href.replace("tel:", "") ?? undefined,
+      email: site.contacts.email?.display,
+      image: `${site.seo.canonical}${site.hero.photo.src}`,
     },
   ],
 };
