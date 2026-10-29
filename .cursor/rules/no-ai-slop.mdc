@@ -1,0 +1,18 @@
+---
+description: "Prevents generic AI-generated landing page patterns"
+alwaysApply: true
+---
+# Anti AI-slop
+Do not default to:
+- gratuitous bento grids;
+- glassmorphism;
+- neon/glow/orb/mesh backgrounds;
+- all-sections-as-rounded-cards;
+- random abstract 3D objects;
+- generic stock psychology imagery;
+- excessive gradients;
+- oversized empty hero text with no content hierarchy;
+- generic motivational copy.
+
+Every decorative element must come from the brand system or solve a real hierarchy/interaction problem.
+Before adding a trendy component, explain internally what job it performs. If there is no job, do not add it.

@@ -1,0 +1,13 @@
+---
+description: "Elena Rovanya brand and website design system"
+alwaysApply: true
+---
+# Elena brand rule
+- Public role: `Психолог · гештальт-подход`.
+- Brand line: `Опора внутри. Движение дальше.`
+- Primary palette comes from `brand/assets/02_palette/palette.json`.
+- Prefer brand icons and markers under `brand/assets` over generic icon packs.
+- Visual direction: premium editorial, warm strength, lots of controlled whitespace, strong serif headlines + clean sans UI.
+- Photography: use only provided Elena crops; never stretch images.
+- Avoid medical, clinic, SPA and generic coaching aesthetics.
+- Avoid public positioning words: лечение, пациент, диагноз, психотерапевт/психотерапия, guaranteed result.

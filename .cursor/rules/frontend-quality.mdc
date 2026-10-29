@@ -1,0 +1,14 @@
+---
+description: "Responsive, accessibility and frontend quality standards"
+alwaysApply: true
+---
+# Frontend quality
+- Verify 1440, 1024, 768 and 390 px layouts.
+- No horizontal overflow.
+- No clipped text or overflowing cards.
+- Body copy should remain comfortably readable (generally 16px+).
+- All interactive elements require keyboard operation and visible focus.
+- Respect prefers-reduced-motion.
+- Optimize images; use deliberate crops and object-position.
+- Keep client JS minimal; prefer server-rendered content when possible.
+- Run typecheck, lint and production build before completion.
